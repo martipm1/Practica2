@@ -1,0 +1,15 @@
+Code Style:
+-----------
+
+	File Name:
+		PascalCase.
+
+	Variables:
+		camelCase.
+
+	Class Names:
+		PascalCase.
+
+	Method Names:
+		PascalCase (visibility), 
+		except operators which are in camelCase.
