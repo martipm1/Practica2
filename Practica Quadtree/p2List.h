@@ -214,5 +214,26 @@ public:
 
 		return (NULL);
 	}
+
+	tdata& operator  [](const unsigned int number)
+	{
+		long                position;
+		p2List_item<tdata>*	position_number;
+		position = 0;
+		position_number = start;
+
+		while (position_number != NULL)
+		{
+			if (position == number)
+			{
+				break;
+			}
+
+			++position;
+			position_number = position_number->next;
+		}
+		return(position_number->data);
+	}
+
 };
 #endif /*__p2List_H__*/

@@ -33,7 +33,7 @@ public:
 
 	void RemoveSibling(NodeTree* node)
 	{
-		p2List_item<NodeTree*>* tmp = sibling.getFirst();
+		p2List_item<NodeTree*>* tmp = siblings.getFirst();
 
 		for (; tmp != NULL; tmp = tmp->next)
 		{
@@ -57,7 +57,7 @@ public:
 		}
 
 		NodeTree<TYPE>* father = NULL;
-		p2List_item<NodeTree*>* tmp = siblings.getFirst()
+		p2List_item<NodeTree*>* tmp = siblings.getFirst();
 
 		for (; tmp != NULL; tmp = tmp->next)
 		{
@@ -113,7 +113,7 @@ public:
 	void InOrderRecursive(p2List<NodeTree<TYPE>*>* list)
 	{
 		p2List_item<NodeTree*>* tmp = siblings.getFirst();
-		unsigned int half = siblings.Count() / 2;
+		unsigned int half = siblings.count() / 2;
 
 		for (int i = 0; i < half; i ++, tmp = tmp->next)
 		{
